@@ -1,0 +1,166 @@
+.app {
+  display: flex;
+  justify-content: center;
+  
+  .container {
+
+    width: 1200px;
+
+    .link {
+      text-decoration: none;
+      color: inherit;
+      font-size: 20px;
+    }
+
+    /* auth */
+    .auth {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+
+      h1 {
+        font-size: 20px;
+        color: teal;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        background-color: white;
+        width: 200px;
+        gap: 20px;
+
+        input {
+          padding: 10px;
+          border: none;
+          border-bottom: 1px solid gray;
+        }
+
+        button {
+          padding: 10px;
+          border: none;
+          background-color: teal;
+          cursor: pointer;
+          color: white;
+        }
+
+        span {
+          font-size: 12px;
+          text-align: center;
+        }
+
+        p {
+          font-size: 12px;
+          color: red;
+          text-align: center;
+        }
+      }
+    }
+
+    /* Navbar */
+    .navbar {
+      .container {
+        padding: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+          img {
+            width: 120px;
+            border-radius: 10%;
+          }
+        }
+
+        .links {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+
+          span{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    /* Footer */
+    footer{
+      margin-top: 100px;
+      padding: 20px;
+      background-color: lightcyan;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 15px;
+
+      img{
+        height: 50px;
+        border-radius: 10%;
+      }
+    }
+
+    /* HOME */
+    .home{
+      .part1{
+        background-image: url('https://www.solidbackgrounds.com/images/3840x2160/3840x2160-dark-blue-solid-color-background.jpg');
+        height: 120vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+          font-size: 35px;
+        }
+        h4 {
+          font-size: 20px;
+        }
+        form{
+          background-color: white;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          width: 500px;
+          display: flex;
+          flex-direction: column;
+          align-items: self-start;
+          justify-content: center;
+          padding-left: 20px;
+          padding-bottom: 40px;
+          
+          input{
+            width: 400px;
+            border: none;
+            border-bottom: 1px solid gray;
+            margin-bottom: 20px;
+            padding: 20px;
+            font-size: 15px;
+          }
+
+          button{
+            width: 200px;
+            padding: 15px;
+            border: none;
+            background-color: cyan;
+            cursor: pointer;
+            font-size: 16px;
+
+            &:hover{
+              background-color: aquamarine;
+            }
+          }
+        }
+      }
+      .part2{
+        background-image: url('D:\ProjectURL\client\tiny-url\src\img\background_1.png');
+        height: 100vh;
+        color: white;
+      }
+    }
+  }
+}
