@@ -2,7 +2,7 @@ const express = require('express');
 const {MongoClient, ServerApiVersion} = require('mongodb');
 const { createClient } = require('redis');
 const ConsistentHash = require('consistent-hash')
-const uri = "mongodb+srv://nypaniket:aniket121@cluster0.senaz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0;"
+const uri = process.env.uri;
 
 const client = new MongoClient(uri,{
   serverApi: {
@@ -12,7 +12,7 @@ const client = new MongoClient(uri,{
   }
 });
 
-const redisClient = createClient({url:'redis://127.0.0.1:6379'});
+const redisClient = createClient({url:process.env.redisurl});
 const consistentHash = new ConsistentHash();
 
 async function run() {
